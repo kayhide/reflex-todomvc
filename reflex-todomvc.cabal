@@ -37,7 +37,7 @@ library
   build-depends: 
     base,
     reflex,
-    ghcjs-dom == 0.2.*,
+    ghcjs-dom,
     reflex-dom,
     containers,
     file-embed,
