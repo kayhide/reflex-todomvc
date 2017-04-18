@@ -52,6 +52,22 @@ Happy Version 1.19.5 Copyright (c) 1993-1996 Andy Gill, Simon Marlow (c) 1997-20
 
 cf) https://github.com/haskell-suite/haskell-src-exts/issues/14
 
+### Another error?
+
+If this error happens
+
+```
+    setup: The program 'ghc' is required but it could not be found
+```
+
+It means some package is requiring `ghc` executable to build.
+
+Giving the path to the executable will make it work.
+
+```sh
+$ PATH=$PATH:~/.stack/programs/x86_64-osx/ghc-7.10.3/bin stack build
+```
+ 
 ## Reflex
 
 - https://github.com/reflex-frp/reflex
